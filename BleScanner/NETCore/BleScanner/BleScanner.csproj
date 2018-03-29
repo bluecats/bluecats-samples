@@ -6,7 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="BlueCats.Ble.Serial" Version="0.0.3" />
+    <PackageReference Include="BlueCats.Ble.Serial" Version="0.0.4" />
+    <PackageReference Include="System.IO.Ports" Version="4.4.0" />
   </ItemGroup>
 
 </Project>
