@@ -28,7 +28,9 @@ namespace BleScanner {
         static void Main( string[] args ) {
             try {
                 // Handle args
-                if ( args.Length < 1 ) {
+                if ( ( args.Length < 1 ) || 
+                    args[ 0 ].Equals( "-h" ) || 
+                    args[ 0 ].Equals( "--help" ) ) {
                     PrintHelp();
                     return;
                 }
@@ -89,8 +91,7 @@ namespace BleScanner {
             }
             finally {
                 Cleanup();
-                
-             }
+            }
         }
 
         static void OnEventReceived( EventPdu eventPdu ) {
@@ -207,9 +208,9 @@ namespace BleScanner {
         }
 
         static void PrintHelp() {
-            Console.WriteLine( "Usage: BleScanner serialport [baud] [options]" );
             Console.WriteLine();
-            Console.WriteLine( "  baud                       Serial baud (default: 921600)" );
+            Console.WriteLine( "Usage: BleScanner serialport | -h" );
+            Console.WriteLine();
             Console.WriteLine( "  -h, --help                 Print this message" );
         }
 
@@ -222,7 +223,9 @@ namespace BleScanner {
         static void Cleanup() {
             try {
                 // Send StopScan to reset the scanner state
-                WriteCommand( SerialProtocol.CreateStopScanCommand() );
+                if ( Serial != null ) { 
+                    WriteCommand( SerialProtocol.CreateStopScanCommand() );
+                }
             }
             catch ( Exception ex ) {
                 PrintError( ex.Message );
