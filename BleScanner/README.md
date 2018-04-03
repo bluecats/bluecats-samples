@@ -1,5 +1,5 @@
 # BLE Scanner Sample (.NET Core)
-A commandline BLE scanner sample, quite similar to hcitool for Linux. Prints out scanned Bluetooth Low Energy Advertisment packets. The format of each line is as follows:
+A commandline BLE scanner sample, quite similar to the popular `hcitool`. Prints out scanned Bluetooth Low Energy Advertisment packets. The format of each line is as follows:
 `{BluetoothAddress} {RSSI} {Advertisment data}`
 ## Requirements
 .NET Core Runtime: [Win](https://www.microsoft.com/net/download/windows/run), [Linux](https://www.microsoft.com/net/download/linux/run), [macOS](https://www.microsoft.com/net/download/macos/run)
