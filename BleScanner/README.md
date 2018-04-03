@@ -17,3 +17,5 @@ Usage: BleScanner serialport | -h
 
   -h, --help                 Print this message
   ```
+
+  ![Screenshot](https://user-images.githubusercontent.com/9400300/38267540-7a51564e-3741-11e8-91fd-989476c6d877.PNG)
