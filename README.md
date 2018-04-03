@@ -2,4 +2,4 @@
 
 Sample      | Platform
 ------------|---------
-BLE Scanner | .NETCore
+[BLE Scanner](https://github.com/bluecats/bluecats-samples/tree/master/BleScanner) | .NETCore
