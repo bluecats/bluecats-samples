@@ -1,6 +1,9 @@
 # BLE Scanner Sample (.NET Core)
 A commandline BLE scanner sample, quite similar to the popular `hcitool`. The app prints out scanned Bluetooth Low Energy Advertisment packets. The format of each line is as follows:
 `{BluetoothAddress} {RSSI} {Advertisment data}`
+
+If `-l` Loop option is added to command line arguments, BLE RSSI Packets will be forwarded to the Loop Location Engine on port `19111`. Loop Location Engine can be running on the localhost or on a remote host.
+
 ## Requirements
 .NET Core Runtime: [Win](https://www.microsoft.com/net/download/windows/run), [Linux](https://www.microsoft.com/net/download/linux/run), [macOS](https://www.microsoft.com/net/download/macos/run)
 
