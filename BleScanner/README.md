@@ -7,15 +7,15 @@ A commandline BLE scanner sample, quite similar to the popular `hcitool`. The ap
 ## Build
 Visual Studio: [Win](https://www.microsoft.com/net/download/windows/build), [Linux](https://www.microsoft.com/net/download/linux/build), [macOS](https://www.microsoft.com/net/download/macos/build)
 
-## Run
-```
-$ dotnet BleScanner.dll com3
-```
-
 ## Usage
 ```
-Usage: BleScanner serialport | -h
+Usage:
+  dotnet BleScanner.dll <serial name> [ -h | -l ]
 
+Example:
+  dotnet BleScanner.dll com3 -l
+
+  -l                         Send to Loop Location Engine (UDP)
   -h, --help                 Print this message
   ```
 
