@@ -34,7 +34,7 @@ namespace BleScanner {
         static CommandResponsePdu ResponsePdu;
 
         // Loop Location Engine properties
-        const int LOOP_PORT = 19111; // Example Loop port
+        const int LOOP_PORT = 9942; // Example Loop port
         const string LOOP_HOST = "127.0.0.1"; // Example Loop IP
         static IPEndPoint Endpoint;
         static Socket LoopSocket;
