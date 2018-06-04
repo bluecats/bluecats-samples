@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 using System.IO.Ports;
+using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using BlueCats.Ble.Serial.BC0xx;
@@ -70,8 +71,10 @@ namespace BleScanner {
                 if ( code != CommandResponseCode.Ack ) throw new Exception( $"Response code: {code}" );
                 CentralBluetoothAddress = response.As< ReadBluetoothAddressCommandResponse >()?.BluetoothAddress;
 
-                // Send StartScan command
-                SendCommand( SerialProtocol.CreateStartScanCommand() );
+				Console.WriteLine( $"Staring scanning on {SerialPath} with MAC: {Encoding.ASCII.GetString( CentralBluetoothAddress)}" );
+				
+				// Send StartScan command
+				SendCommand( SerialProtocol.CreateStartScanCommand() );
                 response = GetResponse();
                 if ( response.ResponseCode != CommandResponseCode.Ack ) {
                     throw new Exception( $"Received response code: {response.ResponseCode}" );
