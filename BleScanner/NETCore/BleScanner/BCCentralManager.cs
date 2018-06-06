@@ -71,7 +71,8 @@ namespace BleScanner {
                 if ( code != CommandResponseCode.Ack ) throw new Exception( $"Response code: {code}" );
                 CentralBluetoothAddress = response.As< ReadBluetoothAddressCommandResponse >()?.BluetoothAddress;
 
-				Console.WriteLine( $"Staring scanning on {SerialPath} with MAC: {Encoding.ASCII.GetString( CentralBluetoothAddress)}" );
+                var macString = DataConverter.ByteArrayToHexString( CentralBluetoothAddress, true, ":" );
+				Console.WriteLine( $"Staring scanning with BLE Scanner [ port={SerialPath}, mac={macString} ]" );
 				
 				// Send StartScan command
 				SendCommand( SerialProtocol.CreateStartScanCommand() );
