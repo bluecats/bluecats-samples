@@ -1,4 +1,4 @@
-# BLE Scanner Sample (.NET Core)
+# BCX0X BLE Scanner Sample  (.NETCore)
 A commandline BLE scanner sample, quite similar to the popular `hcitool`. The app prints out scanned Bluetooth Low Energy Advertisment packets.
 
 BLE Serial API Docs: ([link](https://developer.bluecats.com/documentation/libraries/serial-Home))
