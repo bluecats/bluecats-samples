@@ -3,14 +3,11 @@ A commandline BLE scanner sample, quite similar to the popular `hcitool`. The ap
 
 BLE Serial API Docs: ([link](https://developer.bluecats.com/documentation/libraries/serial-Home))
 
-## Key
-
-
 ## Requirements
 .NET Core Runtime: [Win](https://www.microsoft.com/net/download/windows/run), [Linux](https://www.microsoft.com/net/download/linux/run), [macOS](https://www.microsoft.com/net/download/macos/run)
 
 ## Build
-Visual Studio: [Win](https://www.microsoft.com/net/download/windows/build), [Linux](https://www.microsoft.com/net/download/linux/build), [macOS](https://www.microsoft.com/net/download/macos/build)
+Build Visual Studio project or run `build.ps1` build script
 
 ## Usage
 If `-l` Loop option is added to command line arguments, BLE RSSI Packets will be forwarded to the Loop Location Engine on port `9942`. Loop Location Engine can be running on the localhost or on a remote host.
