@@ -1,10 +1,10 @@
 # bluecats-samples
 
-Sample      | Platform
+Sample      | Platforms
 ------------|---------
-[BLE Scanner BCX0X](https://github.com/bluecats/bluecats-samples/tree/master/BleScanner) | Win, macOS, Linux
-[Beacon Scanner BCX1X](https://github.com/bluecats/bluecats-samples/tree/master/BeaconScanner) | Win 10
+[BLE Scanner (BCX0X)](https://github.com/bluecats/bluecats-samples/tree/master/BleScanner) | Win, macOS, Linux
+[Beacon Scanner (BCX1X)](https://github.com/bluecats/bluecats-samples/tree/master/BeaconScanner) | Win10
 
 
 ## Prebuilt Binaries
-Here: ([link](https://github.com/bluecats/bluecats-samples/tree/master/Binaries))
+Download compiled demo apps: ([link](https://github.com/bluecats/bluecats-samples/tree/master/Binaries))
